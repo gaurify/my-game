@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dodge the Blocks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hud" aria-label="Game information">
+      <div>
+        <h1>Dodge the Blocks</h1>
+        <p class="subtitle">Move with ← → or A/D. Avoid the falling blocks.</p>
+      </div>
+
+      <div class="stats" aria-live="polite">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Best: <strong id="bestScore">0</strong></span>
+      </div>
+    </section>
+
+    <section class="game-shell" aria-label="Game area">
+      <div id="game" class="game" tabindex="0" aria-label="Dodge the Blocks game board">
+        <div id="player" class="player" aria-hidden="true"></div>
+        <div id="overlay" class="overlay">
+          <div class="card">
+            <h2 id="overlayTitle">Ready?</h2>
+            <p id="overlayText">Press Start to begin. Use the keyboard to dodge the blocks.</p>
+            <button id="startBtn" class="btn">Start Game</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Controls">
+      <button id="leftBtn" class="control-btn" aria-label="Move left">◀</button>
+      <button id="pauseBtn" class="control-btn" aria-label="Restart game">Restart</button>
+      <button id="rightBtn" class="control-btn" aria-label="Move right">▶</button>
+    </section>
+
+    <p class="footer-note">Tip: On mobile, use the buttons below. On desktop, use your keyboard.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
