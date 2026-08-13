@@ -15,7 +15,7 @@ Move left and right to dodge falling blocks and try to beat your best score.
 - **Left Arrow** or **A** = move left
 - **Right Arrow** or **D** = move right
 - **Enter / Space** = start game
-- **Esc** = reset game
+- **Esc** = reset game.
 
 
 
